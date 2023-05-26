@@ -1,73 +1,7 @@
-# Start WordPress
+Archive  of UK-CTF.org, a Wordpress-managed site to provide news and statistics on UK-based Security CTF (Capture The Flag) events. Repository contains just the theme, as any data (statistics + blog posts) was lost during server migration. Shown below are screenshots of when the site was in active use.
 
-### A Theme for Learning WordPress
-
-You know HTML, CSS, and JavaScript. You can make beautiful websites. Maybe you’ve heard about WordPress, but aren’t entirely sure how to implement it, or why you might need it. Maybe a client asked for WordPress, but you’re not really familiar with it. Maybe you’ve worked with it before, but don’t know how to make your own theme from scratch. Whatever the case, this article is for you.
-
-Read the article on [Developing a Wordpress Theme from Scratch](http://www.taniarascia.com/developing-a-wordpress-theme-from-scratch/), [Part Two](http://www.taniarascia.com/wordpress-from-scratch-part-two), and [Part Three](https://www.taniarascia.com/wordpress-part-three-custom-fields-and-metaboxes/).
-
-## Prerequisites
-
-All you need to start is a website. Any website will do. You don’t need to know any PHP, or have any prior experience with WordPress. Your website can be custom, or built on Bootstrap/some other framework.
-
-You do need to know how to set up a local server environment. Fortunately, if you don’t know how, I wrote a short, sweet article about getting set up with one. [It will only take a few minutes, so go ahead and do that first.](http://www.taniarascia.com/local-environment/)
-
-## Goals
-
-* Install WordPress locally
-* Take an existing HTML website (based on Bootstrap) and convert it into a custom WordPress theme
-* [Migrate WordPress to a live server](http://www.taniarascia.com/migrating-a-wordpress-site-to-a-live-server/)
-
-## Topics covered
-
-* What can WordPress do for me?
-* Creating a design
-* Installing WordPress
-* Creating your custom theme
-* Make blog posts
-* Make pages
-* Include pagination
-* Include comments
-* Learn how to use functions
-* Create custom post types
-* Migrating WordPress
-
-## Layout pages 
-
-* Header - `header.php`
-* Footer - `footer.php`
-* Content - `content.php`
-* Sidebar - `sidebar.php`
-* Single Post - `single.php`
-* Page - `page.php`
-* Index - `index.html`
-* Comments - `comments.php`
-* Functions - `functions.php`
-
-## The Loop
-
-* Posts
-* Pages
-* Custom Post Types
-* Comments
-
-## Functions
-
-* Learn how to use `functions.php`
-* Properly enqueue styles and scripts
-* Include featured images
-* Correctly insert WordPress title
-* Create custom global settings fields
-* Create custom post types
-
-## Summary
-
-* [Install a local server with WAMP](http://www.taniarascia.com/local-environment/)
-* [Turn a custom Bootstrap website into a WordPress theme](http://www.taniarascia.com/developing-a-wordpress-theme-from-scratch/)
-* [Expand upon WordPress theme with comments and more](http://www.taniarascia.com/wordpress-from-scratch-part-two)
-* [Migrate WordPress to a live server](http://www.taniarascia.com/migrating-a-wordpress-site-to-a-live-server/)
-* [Add custom metaboxes to WordPress theme](https://www.taniarascia.com/wordpress-part-three-custom-fields-and-metaboxes/)
-
-## License
-
-The code is open source and available under the [MIT License](LICENSE.md).
+![DSC07626](https://github.com/sahendrikse/uk-ctf-public/assets/22767324/b8ef702e-5218-4b03-b9ea-5625373029c6)
+![DSC07627](https://github.com/sahendrikse/uk-ctf-public/assets/22767324/954161ec-40f6-4a4e-9367-b8b4d8c5df8a)
+![DSC07628](https://github.com/sahendrikse/uk-ctf-public/assets/22767324/a7887c47-2b11-4d43-a524-592c02685aa2)
+![DSC07629](https://github.com/sahendrikse/uk-ctf-public/assets/22767324/cc88f234-b68b-4db1-b356-b5c3fc952d77)
+![DSC07630](https://github.com/sahendrikse/uk-ctf-public/assets/22767324/f0bf4201-9fb6-4196-a700-a82afbdae8bf)
