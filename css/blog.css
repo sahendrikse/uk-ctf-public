@@ -1,0 +1,965 @@
+/*
+ * Globals
+ */
+ 
+ 
+ul, .ul { 
+  padding: 0;
+}
+
+body {
+  font-family: open sans, sans-serif;
+  font-size: 12px;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h1, .h1 {
+  font-size: 24px;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.table {
+  margin-bottom: 0;	
+}
+
+td {
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.standard-box {
+  box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+  background-color: #fff;
+}
+
+
+/*
+ * Nav-bar
+ */
+ 
+ 
+.logoNav {
+  display: none; 
+}
+
+#blognav.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.blog-masthead {
+  background-color: #428bca;
+  font-size: 1.4rem;
+  position: fixed;
+  top: 0;
+  z-index: 50000;
+  box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+  width: 100%;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);	  
+}
+
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #096EB6;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-nav .active {
+  color: #fff;
+}
+
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+div#nav{
+  text-align: center;
+}
+
+.blog-nav li {		
+  display: inline-block;
+  list-style-type: none;
+   
+  /* Padding */ 
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  font-weight: 500;
+}
+
+.blog-nav li a {
+  color: #fff;
+}
+
+
+/*
+ * Dropdown Menu
+ */
+
+ 
+.dropdown-menu a {
+  color: black;
+  padding: 4px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 10px;
+  left: 20px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #D3D3D3;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*
+ * Event Box
+ */
+
+.event-box {
+  max-width: 140px;
+  min-width: 140px;
+}
+
+.end-text {
+  font-size: 11px;
+}
+
+
+/*
+ * News Box
+ */
+
+
+.index .newsline+.newsline {
+  border-top: 1px solid #ccc;
+}
+.index .newsline {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  text-align: right;
+}
+
+.newsline {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  box-shadow: 0 1px 0px 0 rgba(50,50,50,.3);
+}
+
+.newsline+.newsline {
+  border-top: 1px solid #ccc;
+}
+
+.newsline:hover{
+  background-color:#f0f0f0;
+}
+
+.newstext {
+  font-size: 14px;
+  word-wrap: break-word;
+  width:0;
+  margin-left: 20px;
+  flex: 1 1 auto;
+  text-decoration: none;
+  color: #2d6da3;
+  font-weight: 700
+}
+
+.newsicon {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.newstc {
+  margin-left: 10px;
+  font-size: 11px;
+  color: rgba(9,21,31,.75);
+  text-align: right;
+  font-weight: 400;
+  line-height: 11px;
+  margin: -1px 0;
+  min-width: 80px;
+}
+
+
+/*
+ * Post Headline
+ */
+
+ 
+headline, .headline {
+  font-family: oswald;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  white-space: pre-line;
+  line-height: 1.2em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  color: #2d6da3;
+  letter-spacing: 1px;	
+}
+
+
+/*
+ * Article Info
+ */
+ 
+
+article-info, .article-info {
+  margin: auto;
+  font-family: open sans, sans-serif;
+  font-size: 12px;
+  line-height: 1.66667;
+}
+
+author, .author {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+date, .date {
+  display: block;
+  text-align: right;
+}
+
+.fa-twitter {
+  margin-right: 5px;
+}
+
+
+/*
+ * Alert Box
+ */
+ 
+
+@media {
+  .alert {
+    border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+  }
+}
+
+
+/*
+ * Override Bootstrap defaults.
+ */
+
+ 
+@media (min-width: 1200px) {
+  .container {
+	 
+    width: 90%;
+  }
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+  border: none;
+}
+
+
+/*
+ * Spacer
+ */
+
+ 
+.spacer {
+  height:20px;
+}
+
+
+/*
+ * Blog Name and Description 
+ */
+ 
+ 
+.header-logo {
+  display: block;
+  float: left;
+  position: relative;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+}
+ 
+.blog-header {
+  padding-bottom: 20px;
+}
+
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-left:15%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.bgPadding {
+  min-height: calc(100vh - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 0 16px;
+}
+
+.place {
+	/* text-align: right; */
+}
+
+.col-box {
+    display: block;
+    border-top: 1px solid #ccc;
+}
+
+.col-box-con {
+    background-color: rgba(255,255,255,.25);
+    box-shadow: 0 1px 1px 0 rgba(50,50,50,.4);
+}
+
+.rank {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    font-size: 12px;
+}
+
+.leader {
+    background: url(http://www.uk-ctf.org/wp-content/uploads/2019/03/black-crown.png) 
+		left no-repeat;
+}
+
+.rankNum {
+	width:25px;
+	text-align:right;
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+.rankTeam {
+	margin-left: 7px;
+}
+
+.rankPoints {
+	flex: 1; 
+	text-align: right; 
+	white-space: nowrap;
+	margin: 0 7px;
+}
+
+.col-box:first-child {
+    border-top: 0;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+ * Header Logo and Text
+ */
+
+ 
+.logoCon {
+  height: 120px;
+  margin-bottom:20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-end;
+  margin: 0 0 20px;
+}
+
+.uk-ctf-logo{
+  padding-top:100px;
+  margin-right: 40px;
+  height: 120px;
+  width: 310px; 
+  background-image: url(http://www.uk-ctf.org/wp-content/uploads/2019/02/logotest-webopt.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header-text {
+  float: left;
+  font-family: 'Staatliches', cursive;
+  font-size: 60px;
+}
+
+.banner-mid {
+  height: 120px;
+  width: 600px
+}
+
+.banner-content {
+  margin: 0 auto;
+}
+
+.banner-p {
+  padding-top: 10px;
+}
+
+.inline-word-wrap {
+  word-break: break-all;
+}
+
+/*
+ * Main Containers
+ */
+
+@media screen and (min-width: 360px) {
+  .widthControl {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.widthControl {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.leftCol {
+  padding-top: 53px;
+  max-width: 245px;
+  min-width: 245px;
+  margin-right: 28px;
+  order: 1;
+}
+
+.contentCol {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  padding: 3px;
+  margin: -3px;
+  overflow: hidden;
+  order: 2;
+}
+
+.rightCol {
+  padding-top: 53px;
+  max-width: 245px;
+  min-width: 245px;
+  margin-left: 28px;
+  order: 3;
+}
+
+
+/*
+ * Upcoming Small Event
+ */
+ 
+ 
+.small-event:not(:first-child) {	
+  margin-top: 3px;
+}
+
+.small-event { 
+  margin-top: 3px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.event-logo-container {
+  width: 34px;
+  height: 34px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.a-reset {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+/*
+ * Link Reset
+ */
+
+ 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+
+/*
+ * Event Tabs
+ */
+
+
+.table-holder {
+  width: calc(100% - 34px);
+}
+
+.event-col{
+  width: 35%;
+  max-width: 0;
+}
+
+.medium-col {
+  width: 22.3333%;
+  padding-right: 10px;
+}
+
+.small-col {
+  width: 11.3333%;
+}
+
+.col-value {
+  font-weight: 700;
+}
+
+.event-info {
+  line-height: 20px;
+}
+
+.event-details {
+  line-height: 20px;
+}
+
+.col-desc {
+  color: black;
+  opacity: 0.75;
+}
+
+.small-event-tab {
+  padding: 5px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.small-event:hover{
+  background-color: #f0f0f0;
+}
+
+
+/*
+ * Mobile Resizing
+ */
+
+
+@media screen and (min-width: 728px) {
+  .colCon {
+    display: flex;
+  }
+
+  .rightTable {
+	border: 1px solid #ccc;
+	table-layout: fixed;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentCol{
+    width: 100%;
+  }
+
+  .rightCol {		
+	margin: 0 auto;
+	display: block;	
+    clear: both;				
+  }
+  
+  .banner-mid {
+    display: none;
+  }
+}
+
+
+/*
+ * Widget Placeholder
+ */
+
+ 
+.widget-logo {
+  position: relative;
+  padding: 8px;
+  background-color: #f0f0f0;
+  height: 244px;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+  margin-bottom: 20px;
+}
+
+
+/* 
+ * Pagination
+ */
+ 
+ 
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Tooltip Container
+ */
+ 
+ 
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/*
+ * Tooltip Text
+ */
+ 
+ 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #337ab7;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* 
+ * Chart.js CSS
+ */
+ 
+ 
+ .chart-container {
+  width: 500px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.chartjs-size-monitor {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -1;
+}
+
+
+/* 
+ * Team Rankings CSS
+ */
+ 
+ 
+.ranked-team {
+  margin-top: 8px;
+  position: relative;
+  cursor: pointer;
+ }
+ 
+.bg-holder {
+  background-blend-mode: overlay;
+  background-color: hsla(0,0%,100%,.8);
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+.ranking-header {
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 14px;
+  background-color: hsla(0,0%,96%,.8);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ 
+.position {
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  width: 22px;
+}
+
+.relative {
+  width: 100%;
+  position: relative;
+}
+
+.teamLine {
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+}
+
+.playersLine {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.ranking-header .points {
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.relative .name {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.ranking-header .rankingNicknames {
+    display: inline-block;
+    opacity: .65;
+    font-size: 10px;
+}
+
+/*
+ * Depreciated Styling [To-do: Assess and remove unused]
+ */
+
+ 
+.blog-post {
+  display: block; 
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.blog-post-title {	   
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.last-buffer {
+  padding-bottom: 28px;
+}
+
+.content-title {
+  font-weight: bold;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.org {
+  padding-bottom: 28px;
+  padding-right: 28px;
+}
+
+.logo {    
+  float: right;
+  display: block;
+  margin-left:5px;
+  padding-bottom: 10px;
+}
+
+.total-events {
+  position: absolute;
+  bottom:0;
+}
+ 
+ 
+/*
+ * Footer
+ */
+
+ 
+.blog-footer {
+  padding: 40px 0; 
+  color: #999;
+  text-align: block;
+  background-color: #ffffff;
+  font-size: 12px;
+   
+  /* Border */
+  border-top: 1px solid #e5e5e5;
+  webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0; 
+}
+
+.footer-right {
+  float: right;
+}
+
+
+/*
+ * Orgaisation Thumbnail
+ */
+
+ 
+.org-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.org-banner .thumbnail { 
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.thumbnail {
+  padding: 20px;
+  height: 228px;
+  width: 318px;
+}
+
+.thumb-con {
+	margin-left: 5px;	
+}
+
+.thumbnails {
+  margin-left: -20px;
+  list-style: none;
+}
+
+.org-single {	
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 228px
+}
+
+.org-content {
+  position: absolute;
+  bottom: 0;
+}

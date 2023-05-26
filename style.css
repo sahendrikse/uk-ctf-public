@@ -1,0 +1,9 @@
+/*
+Theme Name: ctfsite-beta1.52
+Author: S. A. Hendrikse
+Description: UK-CTF site theme
+Version: 1.52
+Tags: bootstrap
+*/
+
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="screen, projection" />
